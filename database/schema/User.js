@@ -14,10 +14,7 @@ const userSchema = new Schema({
         type: String,
         require: true //必须的
     },
-    qq: {
-        type: String,
-        require: true //必须的
-    },
+    // 
     createAt: { type: Date, default: Date.now() },
 })
 

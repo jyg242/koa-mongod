@@ -62,13 +62,13 @@ router.post('/total', async(ctx) => {
 
 })
 router.post('/theone', async(ctx) => {
-    let pwd = '12345';
-    let user = 'admin';
+    let pwd = 'Liu135774'
+    let user = 'adminone';
     let { userName, password } = ctx.request.body;
     if (userName === user && password === pwd) {
         ctx.body = {
             code: 200,
-            message: 'abcd'
+            message: encodeURIComponent('加油小飞')
         }
     } else {
         ctx.body = {
